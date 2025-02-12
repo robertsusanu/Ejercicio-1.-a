@@ -54,4 +54,8 @@ public class Circle { // Save as "Circle.java"
     public void setColor(String newColor) {
         this.color = newColor;
     }
+    /** Return a self-descriptive string of this instance in the form of Circle[radius=?,color=?] */
+    public String toString() {
+        return "Circle[radius=" + radius + " color=" + color + "]";
+    }
 }
