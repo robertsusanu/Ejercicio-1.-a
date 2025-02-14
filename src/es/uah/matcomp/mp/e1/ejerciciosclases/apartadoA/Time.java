@@ -42,32 +42,31 @@ public class Time {
     }
 
     public Time nextSecond() {
-        if (hour == 24) {
-            hour = 0;
-        } else if (minute == 60){
-            hour += 1;
-            minute = 0;
-        }else if (second == 60){
-                minute += 1;
-                second = 0;
-            } else{
-            second += 1;
+        this.second += 1;
+        if (this.second > 59) {
+            this.second = 0;
+            this.minute ++;
+        }if(minute > 59) {
+            this.minute = 0;
+            this.hour ++;
+        }if(hour > 23) {
+            this.hour = 0;
         }
-        return new Time(hour, minute, second);
+        return this;
     }
 
     public Time previousSecond() {
-        if (hour == -1) {
-            hour = 23;
-        } else if (minute == -1) {
-            minute = 59;
-            hour -= 1;
-        } else if (second == -1) {
-            second = 59;
-            minute -= 1;
-        }else{
-            second -= 1;
-        }return  new Time(hour, minute, second);
+        this.second -= 1;
+        if (this.second < 0) {
+            this.second = 59;
+            this.minute -= 1;
+        }if(minute < 0) {
+            this.minute = 59;
+            this.hour -= 1;
+        }if(hour < 0) {
+            this.hour = 23;
+        }
+        return this;
     }
 }
 // no hace bien el next y previous second
