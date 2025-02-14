@@ -1,17 +1,17 @@
 import es.uah.matcomp.mp.e1.ejerciciosclases.apartadoB.Author;
 
-public class Book {
+public class Book1 {
     private String name;
     private Author[] authors;
     private double price;
     private int qty = 0;
 
-    public Book(String name, Author authors[], double price) {
+    public Book1(String name, Author authors[], double price) {
         this.name = name;
         this.authors = authors;
         this.price = price;
     }
-    public Book(String name, Author authors[], double price, int qty) {
+    public Book1(String name, Author authors[], double price, int qty) {
         this.name = name;
         this.authors = authors;
         this.price = price;
@@ -48,7 +48,7 @@ public class Book {
             mensaje = mensaje + "[";
             mensaje = mensaje + authors[i].getName() + ", ";
             mensaje = mensaje + authors[i].getEmail() + ", ";
-            mensaje = mensaje + authors[i].getGender();
+            //mensaje = mensaje + authors[i].getGender();
             mensaje = mensaje + "]; ";
         }
         return mensaje;
