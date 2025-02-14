@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases;
+package es.uah.matcomp.mp.e1.ejerciciosclases.apartadoA;
 
 public class Employee {
     private int id;
