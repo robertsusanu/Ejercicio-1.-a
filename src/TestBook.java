@@ -1,4 +1,5 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases.apartadoB;
+import es.uah.matcomp.mp.e1.ejerciciosclases.apartadoB.Author;
+import es.uah.matcomp.mp.e1.ejerciciosclases.apartadoB.Book;
 
 public class TestBook {
     public static void main(String[] args) {

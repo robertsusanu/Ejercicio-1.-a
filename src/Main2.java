@@ -1,6 +1,6 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases.apartadoB;
+import es.uah.matcomp.mp.e1.ejerciciosclases.apartadoB.Author;
 
-public class Main {
+public class Main2 {
     public static void main(String[] args) {
         Author ahTeck = new Author("Tan Ah Teck", "ahteck@nowhere.com", 'm'); // Test the constructor
         System.out.println(ahTeck); // Test toString()
