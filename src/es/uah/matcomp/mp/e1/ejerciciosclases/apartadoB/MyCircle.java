@@ -36,8 +36,11 @@ public class MyCircle {
         return center.getY();
     }
     public int[] getCenterXY(){
-        return new int[]{getCenterX(), getCenterY()};
-    } //ESTA MAL, no retorna lo que debe retornar
+        int[] xy = new int[2];
+        xy[0] = center.getX();
+        xy[1] = center.getY();
+        return xy;
+    }
     public void setCenterX(int x) {
         this.center.setX(x);
     }
@@ -61,6 +64,6 @@ public class MyCircle {
     }
 
     public double distance(MyCircle other){
-        return  Math.sqrt(((other.getCenterX())^2) + ((other.getCenterY()))^2);
-    } // La distancia no esta terminada
+        return this.center.distance(other.getCenter());
+    }
 }

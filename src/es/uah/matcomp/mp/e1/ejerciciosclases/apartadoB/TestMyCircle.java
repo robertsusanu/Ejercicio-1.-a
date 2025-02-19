@@ -18,7 +18,7 @@ public class TestMyCircle {
         System.out.println("El centro es: " + Cir2.getCenter());
         System.out.println("El X del centro es: " + Cir2.getCenterX());
         System.out.println("El Y del centro es: " + Cir2.getCenterY());
-        System.out.println("El X e Y del centro es: " + Cir2.getCenterXY());
+        System.out.println("El X e Y del centro es: Y: " + Cir2.getCenterXY()[0] + ", X: " + Cir2.getCenterXY()[1]);
 
         //Set
         Cir1.setRadius(5);
