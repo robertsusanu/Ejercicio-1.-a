@@ -57,8 +57,10 @@ public class MyLine {
     }
 
     public int[] getBeginXY(){
-        return new int[]{begin.getX(), begin.getY()};
-        //NO retorna bien
+        int[] xy = new int[2];
+        xy[0] = begin.getX();
+        xy[1] = begin.getY();
+        return xy;
     }
     public void setBeginXY(int x, int y){
         this.begin.setX(x);
@@ -66,16 +68,18 @@ public class MyLine {
     }
 
     public int[] getEndXY(){
-        return new int[]{end.getX(), end.getY()};
-        //NO retorna bien
+        int[] xy = new int[2];
+        xy[0] = end.getX();
+        xy[1] = end.getY();
+        return xy;
     }
     public void setEndXY(int x, int y){
         this.end.setX(x);
         this.end.setY(y);
     }
-    //No se como hacerlo
+
     public double getLength(MyLine ln){
-        return Math.sqrt(1);
+        return begin.distance(end);
     }
 
     public double getGradient(){

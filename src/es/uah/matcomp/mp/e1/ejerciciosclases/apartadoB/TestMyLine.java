@@ -19,9 +19,8 @@ public class TestMyLine {
         System.out.println("end X is: " + ln1.getEndX());
         System.out.println("begin Y is: " + ln1.getBeginY());
         System.out.println("end Y is: " + ln1.getEndY());
-        System.out.println("begin X and Y is: " + ln1.getBeginXY());
-        System.out.println("end X and Y is: " + ln1.getEndXY());
-
+        System.out.println("El X e Y del centro es: Y: " + ln1.getBeginXY()[0] + ", X: " + ln1.getBeginXY()[1]);
+        System.out.println("El X e Y del centro es: Y: " + ln1.getEndXY()[0] + ", X: " + ln1.getEndXY()[1]);
         System.out.println("length is: " + ln1.getLength(ln2));
         System.out.println("the gradient in radians is: " + ln1.getGradient());
 
@@ -42,7 +41,5 @@ public class TestMyLine {
         ln3.setBeginXY(5, 5);
         ln3.setEndXY(10, 10);
         System.out.println(ln3);
-
-
     }
 }
