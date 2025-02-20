@@ -18,13 +18,16 @@ public class Square extends Rectangle {
         this.side = side;
     }
 
+    @Override
     public void setWidth(double side) {
         this.side = side;
     }
-    public void setLenght(double side) {
+    @Override
+    public void setLength(double side) {
         this.side = side;
     }
 
+    @Override
     public String toString() {
         return "Square[" + super.toString() + ", width=" + super.getWidth() + "length=" + super.getLength() + "]";
     }

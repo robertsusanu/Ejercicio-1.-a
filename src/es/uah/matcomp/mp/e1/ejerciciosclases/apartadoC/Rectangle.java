@@ -41,6 +41,7 @@ public class Rectangle extends Shape {
         return 2 * width + 2 * length;
     }
 
+    @Override
     public String toString() {
         return "Rectangle[" + super.toString() + ", width=" + width + ", length=" + length + "]";
     }
