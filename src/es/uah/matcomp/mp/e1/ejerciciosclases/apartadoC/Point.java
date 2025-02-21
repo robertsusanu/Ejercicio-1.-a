@@ -1,5 +1,6 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.apartadoC;
 
+
 public class Point {
     private float x = 0.0f;
     private float y = 0.0f;
