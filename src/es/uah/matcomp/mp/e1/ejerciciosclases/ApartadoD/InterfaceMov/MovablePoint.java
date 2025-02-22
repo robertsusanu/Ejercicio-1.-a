@@ -33,4 +33,5 @@ public class MovablePoint implements Movable {
     public void moveRight(){
         x += xSpeed;
     }
+
 }
