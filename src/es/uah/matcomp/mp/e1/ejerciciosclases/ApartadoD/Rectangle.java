@@ -19,7 +19,7 @@ public class Rectangle extends Shape {
     }
 
     public double getWidth() {
-        return width;
+        return this.width;
     }
 
     public void setWidth(double width) {

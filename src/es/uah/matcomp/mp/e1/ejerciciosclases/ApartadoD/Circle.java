@@ -1,7 +1,7 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.ApartadoD;
 
 public class Circle extends Shape{
-    protected  double radius = 1.0;
+    protected double radius = 1.0;
 
     public Circle() {}
     public Circle(double radius) {
