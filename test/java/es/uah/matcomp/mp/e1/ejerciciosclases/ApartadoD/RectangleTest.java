@@ -7,6 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class RectangleTest {
 
     Rectangle Rec1 = new Rectangle(5, 5);
+    Rectangle Rec2 = new Rectangle();
+    Rectangle Rec3 = new Rectangle(3,3, "red", true);
 
     @Test
     void getWidth() {
